@@ -1,4 +1,4 @@
-var mysql = require('mysql');
+var mysql = require('mysql');
 var prompt = require('prompt');
 
 var connection = mysql.createConnection({
@@ -25,7 +25,6 @@ connection.query("select * from Products", function(err,res){
 	console.log("Enter the ID number of the item you wish to purchase.");
 
 	prompt.get(['EnterItemID'], function(err, result1) {
-		setTimeout(valid,2000);
 		var choice=result1.EnterItemID;
 		for (var b=0;b<res.length;b++){
 			if (choice==res[b].ItemID){
@@ -33,7 +32,11 @@ connection.query("select * from Products", function(err,res){
 				chosenindex=b;
 				chosenquantity=res[b].StockQuantity;
 				chosenID=res[b].ItemID;
-				chosenprice=res[b].Price;
+				chosenprice=res[b].Price;}
+			}
 
-				
+
 	console.log("Enter the quantity you want to purchase.");
+
+
+});	

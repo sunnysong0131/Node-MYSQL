@@ -9,6 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mysql": "^2.11.1"
-  }
+    "mysql": "^2.11.1",
+    "prompt": "^1.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnysong0131/Node-MYSQL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sunnysong0131/Node-MYSQL/issues"
+  },
+  "homepage": "https://github.com/sunnysong0131/Node-MYSQL#readme"
 }
